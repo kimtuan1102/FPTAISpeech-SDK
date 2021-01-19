@@ -1,0 +1,3 @@
+include ':fptai-speech'
+include ':app'
+rootProject.name = "FPTAISpeech"
