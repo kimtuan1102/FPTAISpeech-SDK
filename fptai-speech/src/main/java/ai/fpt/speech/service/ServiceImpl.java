@@ -64,6 +64,7 @@ public class ServiceImpl implements Service{
         String json = response.body().string();
         JSONObject jsonObject = new JSONObject(json);
         JSONObject data = jsonObject.getJSONObject("data");
+        Log.d("app", data.toString());
         Gson gson = new Gson();
         RecognizeResponse recognizeResponse = gson.fromJson(data.toString(), RecognizeResponse.class);
         return recognizeResponse;
